@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.customize.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draglayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.administrator.customize.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/head" />
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.example.administrator.customize.MyLinerLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#188df2">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.administrator.customize.MyLinerLayout>
+</com.example.administrator.customize.DragLayout>
